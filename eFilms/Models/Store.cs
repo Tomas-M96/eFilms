@@ -17,10 +17,6 @@ namespace eFilms.Models
         public string StoreLogoURL { get; set; }
 
         //Relationships
-        [ForeignKey("StoreFilmId")]
-        public int StoreFilmId { get; set; }
-        public List<Film> Films { get; set; }
-
         public List<StoreFilms> StoreFilms { get; set; }
 
     }

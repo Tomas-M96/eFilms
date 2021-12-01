@@ -46,6 +46,9 @@ namespace eFilms.Data
         public DbSet<Film> Films { get; set; }
         public DbSet<FilmActors> FilmActors { get; set; }
         public DbSet<Director> Directors { get; set; }
+
         public DbSet<Store> Stores { get; set; }
+
+        public DbSet<StoreFilms> StoreFilms { get; set; }
     }
 }

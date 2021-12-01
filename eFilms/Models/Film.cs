@@ -27,7 +27,7 @@ namespace eFilms.Models
 
         [ForeignKey("DirectorId")]
         public int DirectorId { get; set; }
-        public List<Director> Director { get; set; }
+        public Director Director { get; set; }
 
     }
 }

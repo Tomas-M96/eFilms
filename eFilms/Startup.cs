@@ -30,7 +30,6 @@ namespace eFilms
             //This connects the context to the SQL server
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnectionString")));
 
-
             
             //Configure controllers
             services.AddControllersWithViews();
@@ -62,6 +61,9 @@ namespace eFilms
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            //Seed Database
+            ApplicationDbInitialiser.Seed(app);
         }
     }
 }

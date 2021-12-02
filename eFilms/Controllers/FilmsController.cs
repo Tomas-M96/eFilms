@@ -23,8 +23,8 @@ namespace eFilms.Controllers
         //async
         public async Task<IActionResult> Index()
         {
-            List<Film> data = await context.Films.ToListAsync();
-            return View();
+            List<Film> data = await context.Films.Include(n => n.StoreFilms).OrderBy(n => n.Name).ToListAsync();
+            return View(data);
         }
     }
 }

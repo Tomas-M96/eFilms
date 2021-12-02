@@ -26,7 +26,7 @@ namespace eFilms.Controllers
             //Gets a list of the data from the actors table
             List<Actor> data = context.Actors.ToList();
             //Returns the view
-            return View();
+            return View(data);
         }
     }
 }

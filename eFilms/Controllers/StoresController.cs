@@ -24,7 +24,7 @@ namespace eFilms.Controllers
         public async Task<IActionResult> Index()
         {
             List<Store> data = await context.Stores.ToListAsync();
-            return View();
+            return View(data);
         }
     }
 }

@@ -11,8 +11,11 @@ namespace eFilms.Models
         //Attributes
         [Key]
         public int DirectorId { get; set; }
+        [Display(Name = "Full Name")]
         public string FullName { get; set; }
+        [Display(Name = "Biography")]
         public string Bio { get; set; }
+        [Display(Name = "Directors Picture")]
         public string ProfilePictureURL { get; set; }
 
         //Relationships

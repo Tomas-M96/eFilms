@@ -12,7 +12,11 @@ namespace eFilms.Models
         //Attributes
         [Key]
         public int StoreId { get; set; }
+
+        [Display(Name = "Store Name")]
         public string Name { get; set; }
+
+        [Display(Name = "Description")]
         public string Description { get; set; }
         public string StoreLogoURL { get; set; }
 

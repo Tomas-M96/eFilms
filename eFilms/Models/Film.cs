@@ -13,11 +13,23 @@ namespace eFilms.Models
         //Attributes
         [Key]
         public int FilmId { get; set; }
+
+        [Display(Name = "Film Name")]
         public string Name { get; set; }
+
+        [Display(Name = "Description")]
         public string Description { get; set; }
+
+        [Display(Name = "Film Cover")]
         public string FilmCoverURL { get; set; }
+
+        [Display(Name = "Release Date")]
         public DateTime ReleaseDate { get; set; }
+
+        [Display(Name = "Price")]
         public double Price { get; set; }
+
+        [Display(Name = "Genre")]
         public FilmCategory FilmCategory { get; set; }
 
         //Relationships
